@@ -1,23 +1,24 @@
 import type { CSSProperties } from 'react'
 
 export const editableRootStyle = {
-  '--slot4-page-bg': '#f7f4ef',
+  '--slot4-page-bg': '#f6f7f8',
   '--slot4-page-text': '#111111',
-  '--slot4-panel-bg': '#efeae3',
-  '--slot4-surface-bg': '#fffdfa',
-  '--slot4-muted-text': '#514e49',
-  '--slot4-soft-muted-text': '#77716a',
-  '--slot4-accent': '#c92f2f',
-  '--slot4-accent-fill': '#c92f2f',
-  '--slot4-accent-soft': '#f3d8d3',
-  '--slot4-dark-bg': '#111111',
+  '--slot4-panel-bg': '#eef1f4',
+  '--slot4-surface-bg': '#ffffff',
+  '--slot4-muted-text': '#4f5d69',
+  '--slot4-soft-muted-text': '#7a8792',
+  '--slot4-accent': '#28a7df',
+  '--slot4-accent-fill': '#28a7df',
+  '--slot4-accent-soft': '#dff3fb',
+  '--slot4-dark-bg': '#343944',
   '--slot4-dark-text': '#ffffff',
-  '--slot4-media-bg': '#e4e0da',
-  '--slot4-cream': '#f7f4ef',
-  '--slot4-warm': '#fffdfa',
-  '--slot4-lavender': '#c92f2f',
-  '--slot4-gray': '#ece9e4',
-  '--slot4-body-gradient': 'linear-gradient(180deg, #f7f4ef 0%, #fffdfa 52%, #eeeae4 100%)',
+  '--slot4-media-bg': '#e8edf1',
+  '--slot4-cream': '#f6f7f8',
+  '--slot4-warm': '#ffffff',
+  '--slot4-lavender': '#28a7df',
+  '--slot4-gray': '#edf0f3',
+  '--slot4-green': '#51c62f',
+  '--slot4-body-gradient': 'linear-gradient(180deg, #ffffff 0%, #f6f7f8 55%, #eef1f4 100%)',
 } as CSSProperties
 
 export const editablePalette = {
@@ -50,7 +51,7 @@ export const editablePalette = {
 export const editableDesignContract = {
   shell: {
     page: `min-h-screen ${editablePalette.pageBg} ${editablePalette.pageText}`,
-    section: 'mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10',
+    section: 'mx-auto w-full max-w-[1090px] px-4 sm:px-6 lg:px-0',
     sectionY: 'py-12 sm:py-16 lg:py-20',
   },
   layout: {
@@ -73,7 +74,7 @@ export const editableDesignContract = {
   button: {
     primary: `inline-flex items-center justify-center gap-2 bg-[var(--slot4-dark-bg)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-[var(--slot4-accent-fill)]`,
     secondary: `inline-flex items-center justify-center gap-2 border border-black/30 bg-transparent px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-black transition hover:bg-black hover:text-white`,
-    accent: `inline-flex items-center justify-center gap-2 bg-[var(--slot4-accent-fill)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-black`,
+    accent: `inline-flex items-center justify-center gap-2 bg-[var(--slot4-green)] px-7 py-3.5 text-xs font-black uppercase tracking-[0.12em] text-white transition hover:bg-[var(--slot4-dark-bg)]`,
   },
   media: {
     frame: `relative overflow-hidden ${editablePalette.mediaBg}`,
